@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A5F68C7EA86224AF8148A21 /* Pods_FinanceVIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27CFA41A769AF2EDE92CDC2 /* Pods_FinanceVIPER.framework */; };
+		448D55B4265786DD00448744 /* ExpensesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D55B3265786DD00448744 /* ExpensesTableViewCell.swift */; };
+		44AB1BF6264920E90054695C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1BF5264920E90054695C /* AppDelegate.swift */; };
+		44AB1BF8264920E90054695C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1BF7264920E90054695C /* SceneDelegate.swift */; };
+		44AB1BFA264920E90054695C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1BF9264920E90054695C /* ViewController.swift */; };
+		44AB1BFD264920E90054695C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44AB1BFB264920E90054695C /* Main.storyboard */; };
+		44AB1BFF264920EA0054695C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44AB1BFE264920EA0054695C /* Assets.xcassets */; };
+		44AB1C02264920EA0054695C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44AB1C00264920EA0054695C /* LaunchScreen.storyboard */; };
+		44AB1C0D264921A60054695C /* FinanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1C0C264921A60054695C /* FinanceService.swift */; };
+		44AB1C22264922A10054695C /* ExpensesModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1C1D264922A10054695C /* ExpensesModuleBuilder.swift */; };
+		44AB1C23264922A10054695C /* ExpensesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1C1E264922A10054695C /* ExpensesPresenter.swift */; };
+		44AB1C24264922A10054695C /* Expensesnteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1C1F264922A10054695C /* Expensesnteractor.swift */; };
+		44AB1C25264922A10054695C /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1C20264922A10054695C /* ExpensesViewController.swift */; };
+		44AB1C26264922A10054695C /* ExpensesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB1C21264922A10054695C /* ExpensesRouter.swift */; };
+		44F2311A264926320066C9A4 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F23119264926320066C9A4 /* Expense.swift */; };
+		44F2311E26492EEF0066C9A4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F2311D26492EEF0066C9A4 /* UserService.swift */; };
+		44F231222649328E0066C9A4 /* DateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F231212649328E0066C9A4 /* DateHeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		311CCDEF82F003692DAF8173 /* Pods-FinanceVIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceVIPER.release.xcconfig"; path = "Target Support Files/Pods-FinanceVIPER/Pods-FinanceVIPER.release.xcconfig"; sourceTree = "<group>"; };
+		448D55B3265786DD00448744 /* ExpensesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewCell.swift; sourceTree = "<group>"; };
+		44AB1BF2264920E90054695C /* FinanceVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44AB1BF5264920E90054695C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44AB1BF7264920E90054695C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44AB1BF9264920E90054695C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44AB1BFC264920E90054695C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44AB1BFE264920EA0054695C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44AB1C01264920EA0054695C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44AB1C03264920EA0054695C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44AB1C0C264921A60054695C /* FinanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceService.swift; sourceTree = "<group>"; };
+		44AB1C1D264922A10054695C /* ExpensesModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesModuleBuilder.swift; sourceTree = "<group>"; };
+		44AB1C1E264922A10054695C /* ExpensesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesPresenter.swift; sourceTree = "<group>"; };
+		44AB1C1F264922A10054695C /* Expensesnteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expensesnteractor.swift; sourceTree = "<group>"; };
+		44AB1C20264922A10054695C /* ExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		44AB1C21264922A10054695C /* ExpensesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesRouter.swift; sourceTree = "<group>"; };
+		44F23119264926320066C9A4 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		44F2311D26492EEF0066C9A4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		44F231212649328E0066C9A4 /* DateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeaderView.swift; sourceTree = "<group>"; };
+		A858C0E5F30E97DF80B02C6E /* Pods-FinanceVIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceVIPER.debug.xcconfig"; path = "Target Support Files/Pods-FinanceVIPER/Pods-FinanceVIPER.debug.xcconfig"; sourceTree = "<group>"; };
+		B27CFA41A769AF2EDE92CDC2 /* Pods_FinanceVIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceVIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44AB1BEF264920E90054695C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5F68C7EA86224AF8148A21 /* Pods_FinanceVIPER.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140C9766F1AC29673EF0A85A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B27CFA41A769AF2EDE92CDC2 /* Pods_FinanceVIPER.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		448D55B2265786BA00448744 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				448D55B3265786DD00448744 /* ExpensesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44AB1BE9264920E90054695C = {
+			isa = PBXGroup;
+			children = (
+				44AB1BF4264920E90054695C /* FinanceVIPER */,
+				44AB1BF3264920E90054695C /* Products */,
+				E36022DEF8013FE4FC1EF566 /* Pods */,
+				140C9766F1AC29673EF0A85A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44AB1BF3264920E90054695C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44AB1BF2264920E90054695C /* FinanceVIPER.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44AB1BF4264920E90054695C /* FinanceVIPER */ = {
+			isa = PBXGroup;
+			children = (
+				44F23120264932750066C9A4 /* Views */,
+				44AB1C10264922150054695C /* Expenses */,
+				44AB1C0A264921620054695C /* API */,
+				44AB1BF5264920E90054695C /* AppDelegate.swift */,
+				44AB1BF9264920E90054695C /* ViewController.swift */,
+				44AB1BF7264920E90054695C /* SceneDelegate.swift */,
+				44AB1BFB264920E90054695C /* Main.storyboard */,
+				44AB1BFE264920EA0054695C /* Assets.xcassets */,
+				44AB1C00264920EA0054695C /* LaunchScreen.storyboard */,
+				44AB1C03264920EA0054695C /* Info.plist */,
+			);
+			path = FinanceVIPER;
+			sourceTree = "<group>";
+		};
+		44AB1C0A264921620054695C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				44F23118264926150066C9A4 /* Models */,
+				44AB1C0B2649218F0054695C /* Services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		44AB1C0B2649218F0054695C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44AB1C0C264921A60054695C /* FinanceService.swift */,
+				44F2311D26492EEF0066C9A4 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		44AB1C10264922150054695C /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				44AB1C1F264922A10054695C /* Expensesnteractor.swift */,
+				44AB1C1D264922A10054695C /* ExpensesModuleBuilder.swift */,
+				44AB1C1E264922A10054695C /* ExpensesPresenter.swift */,
+				44AB1C21264922A10054695C /* ExpensesRouter.swift */,
+				44AB1C20264922A10054695C /* ExpensesViewController.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		44F23118264926150066C9A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44F23119264926320066C9A4 /* Expense.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44F23120264932750066C9A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				448D55B2265786BA00448744 /* Cells */,
+				44F231212649328E0066C9A4 /* DateHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E36022DEF8013FE4FC1EF566 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A858C0E5F30E97DF80B02C6E /* Pods-FinanceVIPER.debug.xcconfig */,
+				311CCDEF82F003692DAF8173 /* Pods-FinanceVIPER.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44AB1BF1264920E90054695C /* FinanceVIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44AB1C06264920EA0054695C /* Build configuration list for PBXNativeTarget "FinanceVIPER" */;
+			buildPhases = (
+				74018AF7B261AF9A7E48EEBC /* [CP] Check Pods Manifest.lock */,
+				44AB1BEE264920E90054695C /* Sources */,
+				44AB1BEF264920E90054695C /* Frameworks */,
+				44AB1BF0264920E90054695C /* Resources */,
+				EA908C47694840137DC21CB2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinanceVIPER;
+			productName = FinanceVIPER;
+			productReference = 44AB1BF2264920E90054695C /* FinanceVIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44AB1BEA264920E90054695C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					44AB1BF1264920E90054695C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 44AB1BED264920E90054695C /* Build configuration list for PBXProject "FinanceVIPER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44AB1BE9264920E90054695C;
+			productRefGroup = 44AB1BF3264920E90054695C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44AB1BF1264920E90054695C /* FinanceVIPER */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44AB1BF0264920E90054695C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44AB1C02264920EA0054695C /* LaunchScreen.storyboard in Resources */,
+				44AB1BFF264920EA0054695C /* Assets.xcassets in Resources */,
+				44AB1BFD264920E90054695C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74018AF7B261AF9A7E48EEBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceVIPER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA908C47694840137DC21CB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceVIPER/Pods-FinanceVIPER-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceVIPER/Pods-FinanceVIPER-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceVIPER/Pods-FinanceVIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44AB1BEE264920E90054695C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44AB1C22264922A10054695C /* ExpensesModuleBuilder.swift in Sources */,
+				44F231222649328E0066C9A4 /* DateHeaderView.swift in Sources */,
+				44AB1C24264922A10054695C /* Expensesnteractor.swift in Sources */,
+				44AB1C0D264921A60054695C /* FinanceService.swift in Sources */,
+				44AB1BFA264920E90054695C /* ViewController.swift in Sources */,
+				448D55B4265786DD00448744 /* ExpensesTableViewCell.swift in Sources */,
+				44F2311A264926320066C9A4 /* Expense.swift in Sources */,
+				44AB1BF6264920E90054695C /* AppDelegate.swift in Sources */,
+				44F2311E26492EEF0066C9A4 /* UserService.swift in Sources */,
+				44AB1BF8264920E90054695C /* SceneDelegate.swift in Sources */,
+				44AB1C26264922A10054695C /* ExpensesRouter.swift in Sources */,
+				44AB1C23264922A10054695C /* ExpensesPresenter.swift in Sources */,
+				44AB1C25264922A10054695C /* ExpensesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44AB1BFB264920E90054695C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44AB1BFC264920E90054695C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44AB1C00264920EA0054695C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44AB1C01264920EA0054695C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44AB1C04264920EA0054695C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44AB1C05264920EA0054695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44AB1C07264920EA0054695C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A858C0E5F30E97DF80B02C6E /* Pods-FinanceVIPER.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DZ4JHZ65S;
+				INFOPLIST_FILE = FinanceVIPER/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mamchenko.FinanceVIPER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44AB1C08264920EA0054695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311CCDEF82F003692DAF8173 /* Pods-FinanceVIPER.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DZ4JHZ65S;
+				INFOPLIST_FILE = FinanceVIPER/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mamchenko.FinanceVIPER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44AB1BED264920E90054695C /* Build configuration list for PBXProject "FinanceVIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44AB1C04264920EA0054695C /* Debug */,
+				44AB1C05264920EA0054695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44AB1C06264920EA0054695C /* Build configuration list for PBXNativeTarget "FinanceVIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44AB1C07264920EA0054695C /* Debug */,
+				44AB1C08264920EA0054695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44AB1BEA264920E90054695C /* Project object */;
+}
